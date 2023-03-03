@@ -1,12 +1,3 @@
-FROM node:14
-
-WORKDIR /app
-
-RUN npm install
-
-COPY . .
-
-RUN npm run build
 
 FROM php:8.0-apache
 
@@ -24,22 +15,23 @@ RUN apt-get update && apt-get install -y \
 # Instalação do Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Diretorio de trabalho
-WORKDIR /var/www/html
+# Copia os arquivos do projeto para o container
+COPY . /var/www/html
 
-COPY . .
+# Instalação das dependências do Laravel
+RUN composer install --no-dev --no-interaction --optimize-autoloader
 
-RUN cp .env.example .env
+# Instalação das dependências do Vue
+RUN npm install
 
-RUN php artisan key:generate
+# Geração dos arquivos do Vue
+RUN npm run production
 
-#Dependencias Laravel
-RUN composer install
+# Permissões de arquivos
+RUN chown -R www-data:www-data /var/www/html/storage && chmod -R 775 /var/www/html/storage
 
-# Executa as migrations e seeds
-RUN php artisan migrate:fresh --seed
+# Exposição da porta do Apache
+EXPOSE 80
 
-EXPOSE 8000
-
-# Inicia o servidor PHP-FPM
-CMD ["php-fpm"]
+# Inicialização do Apache
+CMD ["apache2-foreground"]
