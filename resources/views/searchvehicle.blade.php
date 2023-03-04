@@ -10,7 +10,7 @@
     </head>
     <body class="antialiased">
         <div id="app">
-            <example-component><example-component/>
+        <search-vehicle-component><search-vehicle-component/>
         </div>
         <script src="{{asset('js/app.js')}}"></script>
     </body>

@@ -24,8 +24,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/create-vehicle',[VehicleController::class,'create']);
 
-Route::get('/vehicle/{model}',[VehicleController::class,'findByModel']);
+Route::get('/vehicle-model/{model}',[VehicleController::class,'findByModel']);
 
-Route::get('/vehicle/{year}',[VehicleController::class,'findByYear']);
+Route::get('/vehicles', [VehicleController::class,'index']);
 
-Route::get('/vehicle', [VehicleController::class,'index']);
+Route::fallback(function(Request $request) {
+    return response()->json(['message' => 'Rota não encontrada.'], 404);
+});

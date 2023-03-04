@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('searchvehicle');
 });
 
 Route::get('/form', function () {
@@ -23,3 +23,7 @@ Route::get('/form', function () {
 });
 
 Route::post('/create-vehicle',[VehicleController::class,'create'])->name('create-vehicle');
+
+Route::get('/vehicle-model/{model}',[VehicleController::class,'findByModel'])->name('vehicle-model');
+
+Route::get('/vehicles', [VehicleController::class,'index'])->name('vehicles');
