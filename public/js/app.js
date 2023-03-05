@@ -5319,14 +5319,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      foundVehicle: ''
+      foundVehicle: null,
+      options: [],
+      selectedOption: null
     };
+  },
+  mounted: function mounted() {
+    this.findAllVehicles();
   },
   methods: {
     findVehicleByModel: function findVehicleByModel(model) {
       var _this = this;
       axios__WEBPACK_IMPORTED_MODULE_0___default().get("/vehicle-model/".concat(model)).then(function (res) {
         return _this.foundVehicle = res.data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    findAllVehicles: function findAllVehicles() {
+      var _this2 = this;
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get("/vehicles").then(function (res) {
+        return _this2.options = res.data;
       })["catch"](function (error) {
         console.log(error);
       });
@@ -5414,9 +5427,42 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
+  return _c("main", {
     staticClass: "container"
-  }, [_c("h1", [_vm._v("Simulação financiamento")]), _vm._v(" "), _c("section", [_c("input", {
+  }, [_c("h1", [_vm._v("Simulação financiamento")]), _vm._v(" "), _c("section", [_c("select", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.selectedOption,
+      expression: "selectedOption"
+    }],
+    on: {
+      change: [function ($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.selectedOption = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+      }, function ($event) {
+        return _vm.findVehicleByModel(_vm.selectedOption);
+      }]
+    }
+  }, [_c("option", {
+    attrs: {
+      value: "",
+      disabled: "",
+      selected: ""
+    }
+  }, [_vm._v("\n                Selecione o Veiculo\n            ")]), _vm._v(" "), _vm._l(_vm.options, function (option) {
+    return _c("option", {
+      key: option.id,
+      domProps: {
+        value: option.model
+      }
+    }, [_vm._v("\n                " + _vm._s(option.model) + "\n            ")]);
+  })], 2), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -5435,13 +5481,7 @@ var render = function render() {
         _vm.model = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c("button", {
-    on: {
-      click: function click($event) {
-        return _vm.findVehicleByModel(_vm.model);
-      }
-    }
-  }, [_vm._v("Buscar")]), _vm._v(" "), _vm.foundVehicle ? _c("p", [_vm._v(_vm._s(_vm.foundVehicle))]) : _vm._e()])]);
+  }), _vm._v(" "), _vm.foundVehicle ? _c("p", [_vm._v(_vm._s(_vm.foundVehicle))]) : _vm._e()]), _vm._v(" "), _c("section")]);
 };
 var staticRenderFns = [];
 render._withStripped = true;
