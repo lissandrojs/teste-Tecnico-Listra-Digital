@@ -20,13 +20,14 @@
             <input type="text" v-model="model" />
             <p v-if="foundVehicle">{{ foundVehicle }}</p>
         </section>
-        <section></section>
+       <FooterComponent/>
     </main>
 </template>
 
 <script>
 import axios from "axios";
 import HeaderComponent from "./header/HeaderComponent.vue";
+import FooterComponent from "./footer/FooterComponent.vue";
 
 export default {
     
@@ -38,7 +39,8 @@ export default {
         };
     },
     components:{
-        HeaderComponent
+        HeaderComponent,
+        FooterComponent
     },
 
     mounted() {
