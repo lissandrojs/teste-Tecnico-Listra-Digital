@@ -9,6 +9,8 @@ window.Vue = require('vue').default;
 
 Vue.component('search-vehicle-component', require('./components/SearchVehicleComponent.vue').default);
 Vue.component('vehicle-create-component', require('./components/vehicle/VehicleCreateComponent.vue').default);
+Vue.component('header-component', require('./components/header/HeaderComponent.vue').default);
+Vue.component('footer-component', require('./components/footer/FooterComponent.vue').default);
 
 
 const app = new Vue({

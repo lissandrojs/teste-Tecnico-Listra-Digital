@@ -1,5 +1,6 @@
 <template>
-    <main class="container">
+    <main >
+        <HeaderComponent/>
         <h1>Simulação financiamento</h1>
         <section>
             <select v-model="selectedOption" @change="findVehicleByModel(selectedOption)">
@@ -25,6 +26,7 @@
 
 <script>
 import axios from "axios";
+import HeaderComponent from "./header/HeaderComponent.vue";
 
 export default {
     
@@ -34,6 +36,9 @@ export default {
             options: [],
             selectedOption: null,
         };
+    },
+    components:{
+        HeaderComponent
     },
 
     mounted() {
