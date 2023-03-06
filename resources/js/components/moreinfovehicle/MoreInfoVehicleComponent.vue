@@ -9,30 +9,30 @@
                 />
                 {{ city }}
             </div>
-          <aside>
-            <h5>{{ model }}</h5>
-            <p>{{ description }}</p>
-            <section class="section-more-info-vehicle">
-                <div class="align-icons">
-                    <img
-                        src="../../../icons/ICON_ANO.png"
-                        alt="Ano do veiculo"
-                    />
-                    <p>{{ year }}</p>
-                </div>
-                <div class="align-icons">
-                    <img src="../../../icons/km.png" />
-                    <p>{{ milege }}</p>
-                </div>
-                <div class="align-icons">
-                    <img src="../../../icons/cambio.png" />
-                    <p>
-                        {{ typeofexchange }}
-                    </p>
-                </div>
-            </section>
-            <h3>R$ {{ vehiclevalue }}</h3>
-          </aside>
+            <aside>
+                <h5>{{ model }}</h5>
+                <p>{{ description }}</p>
+                <section class="section-more-info-vehicle">
+                    <div class="align-icons">
+                        <img
+                            src="../../../icons/ICON_ANO.png"
+                            alt="Ano do veiculo"
+                        />
+                        <p>{{ year }}</p>
+                    </div>
+                    <div class="align-icons">
+                        <img src="../../../icons/km.png" />
+                        <p>{{ milege }}</p>
+                    </div>
+                    <div class="align-icons">
+                        <img src="../../../icons/cambio.png" />
+                        <p>
+                            {{ typeofexchange }}
+                        </p>
+                    </div>
+                </section>
+                <h3>R$ {{ vehiclevalue }}</h3>
+            </aside>
         </section>
 
         <article class="container-values-simulator">
@@ -41,18 +41,23 @@
                 <div class="line-title"></div>
             </header>
             <section>
-                <h3>R$ {{ vehiclevalue }}</h3>
+                <section class="first-container-financing">
+                    <h5> 6X</h5>
+                    <h4>R$ {{ vehiclevalue }}</h4>
+                </section>
 
-                <div>
+                <section class="second-container-financing">
                     <div>
-                        <h3>R$ {{ vehiclevalue }}</h3>
+                        <h5>12X</h5>
+                        <h4>R$ {{ vehiclevalue }}</h4>
                     </div>
                     <div>
-                        <h3>R$ {{ vehiclevalue }}</h3>
+                        <h5>48X</h5>
+                        <h4>R$ {{ vehiclevalue }}</h4>
                     </div>
-                </div>
+                </section>
 
-                <div>
+                <div class="container-btn-wpp">
                     <button class="btn-wpp">
                         <img
                             alt="icone whats app"
@@ -99,7 +104,7 @@ export default {
     border-radius: 0px 16px 16px 0px;
     position: relative;
     bottom: 39px;
-    width:60%;
+    width: 60%;
     background-color: #ffffff;
     padding-left: 5px;
     padding-right: 10px;
@@ -151,32 +156,102 @@ export default {
     background-color: #fafafa;
 }
 
-aside{
+aside {
     padding: 10px;
 }
 
-article{
+article {
+    padding: 30px;
     width: 300px;
-    height: 416px;
+    height: 484px;
     margin-left: 0px;
     margin-top: 24px;
+}
+.first-container-financing {
+    width: 272px;
+    height: 77px;
+}
 
+.second-container-financing{
+    width: 271px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first-container-financing h4 {
+    color: #7D28F7;
+    font-weight: bolder;
+
+}
+.second-container-financing h4 {
+    color: #7D28F7;
+    font-weight: bolder;
+
+}
+
+.first-container-financing h5 {
+    color: black;
+    font-weight: bolder;
+
+}
+.second-container-financing h5 {
+    color: black;
+    font-weight: bolder;
+}
+
+.second-container-financing div {
+    color: black;
+    font-weight: bolder;
+    width: 100px;
+}
+
+.container-btn-wpp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 122px;;
+    
 }
 
 
 @media (min-width: 892px) {
+
+    .second-container-financing div {
+    width: 147px;
+}
+
+    .container-btn-wpp {
+    display: flex;
+    margin-top: 44px;
+    align-items: center;
+    flex-direction: row;
+}
+    .first-container-financing {
+        width: 339px;
+        height: 77px;
+    }
+
+    .second-container-financing{
+    width: 259px;
+    height: 77px;
+    display: flex;
+    flex-direction: row;
+
+}
     .section-container {
         display: flex;
         margin: 35px 45px 75px 45px;
         align-items: center;
         flex-direction: row;
     }
-    article{
-    width: 945px;
-    height: 367px;
-    margin-left: 50px;
-    margin-top: 0px;
+    article {
+        padding: 30px;
+        width: 945px;
+        height: 367px;
+        margin-left: 50px;
+        margin-top: 0px;
+    }
 }
-}
-
 </style>

@@ -5347,6 +5347,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.findAllVehicles();
+    this.findVehicleByModel('Fiat Uno');
   },
   methods: {
     findVehicleByModel: function findVehicleByModel(model) {
@@ -5743,9 +5744,15 @@ var render = function render() {
     attrs: {
       src: __webpack_require__(/*! ../../../icons/cambio.png */ "./resources/icons/cambio.png")
     }
-  }), _vm._v(" "), _c("p", [_vm._v("\n                    " + _vm._s(_vm.typeofexchange) + "\n                ")])])]), _vm._v(" "), _c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])])]), _vm._v(" "), _c("article", {
+  }), _vm._v(" "), _c("p", [_vm._v("\n                        " + _vm._s(_vm.typeofexchange) + "\n                    ")])])]), _vm._v(" "), _c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])])]), _vm._v(" "), _c("article", {
     staticClass: "container-values-simulator"
-  }, [_vm._m(0), _vm._v(" "), _c("section", [_c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))]), _vm._v(" "), _c("div", [_c("div", [_c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])]), _vm._v(" "), _c("div", [_c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])])]), _vm._v(" "), _c("div", [_vm._m(1), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.storephone) + "\n                ")])])])])]);
+  }, [_vm._m(0), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "first-container-financing"
+  }, [_c("h5", [_vm._v(" 6X")]), _vm._v(" "), _c("h4", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])]), _vm._v(" "), _c("section", {
+    staticClass: "second-container-financing"
+  }, [_c("div", [_c("h5", [_vm._v("12X")]), _vm._v(" "), _c("h4", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])]), _vm._v(" "), _c("div", [_c("h5", [_vm._v("48X")]), _vm._v(" "), _c("h4", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])])]), _vm._v(" "), _c("div", {
+    staticClass: "container-btn-wpp"
+  }, [_vm._m(1), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.storephone) + "\n                ")])])])])]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -11448,7 +11455,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.line-title {\n    background-color: #7d28f7;\n    width: 55px;\n    height: 3px;\n    border-radius: 22px;\n    margin-bottom: 25px;\n}\n.container-location {\n    border-radius: 0px 16px 16px 0px;\n    position: relative;\n    bottom: 39px;\n    width:60%;\n    background-color: #ffffff;\n    padding-left: 5px;\n    padding-right: 10px;\n}\n.btn-wpp {\n    background-color: #4ac959;\n    height: 40px;\n    width: 257px;\n    border-radius: 4px;\n    border: none;\n    border-radius: 50px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    color: white;\n}\n.section-container {\n    display: flex;\n    margin: 35px 45px 75px 45px;\n    align-items: center;\n    flex-direction: column;\n}\n.imagem-vehicle {\n    width: 300px;\n    height: 191px;\n}\n.section-more-info-vehicle {\n    display: flex;\n    justify-content: space-between;\n}\n.section-all-info {\n    width: 300px;\n    height: 367px;\n    background-color: #ffffff;\n    border-radius: 4px;\n}\n.section-all-info h3 {\n    float: right;\n}\n.align-icons {\n    display: flex;\n    align-items: flex-start;\n}\n.container-values-simulator {\n    background-color: #fafafa;\n}\naside{\n    padding: 10px;\n}\narticle{\n    width: 300px;\n    height: 416px;\n    margin-left: 0px;\n    margin-top: 24px;\n}\n@media (min-width: 892px) {\n.section-container {\n        display: flex;\n        margin: 35px 45px 75px 45px;\n        align-items: center;\n        flex-direction: row;\n}\narticle{\n    width: 945px;\n    height: 367px;\n    margin-left: 50px;\n    margin-top: 0px;\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.line-title {\n    background-color: #7d28f7;\n    width: 55px;\n    height: 3px;\n    border-radius: 22px;\n    margin-bottom: 25px;\n}\n.container-location {\n    border-radius: 0px 16px 16px 0px;\n    position: relative;\n    bottom: 39px;\n    width: 60%;\n    background-color: #ffffff;\n    padding-left: 5px;\n    padding-right: 10px;\n}\n.btn-wpp {\n    background-color: #4ac959;\n    height: 40px;\n    width: 257px;\n    border-radius: 4px;\n    border: none;\n    border-radius: 50px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    color: white;\n}\n.section-container {\n    display: flex;\n    margin: 35px 45px 75px 45px;\n    align-items: center;\n    flex-direction: column;\n}\n.imagem-vehicle {\n    width: 300px;\n    height: 191px;\n}\n.section-more-info-vehicle {\n    display: flex;\n    justify-content: space-between;\n}\n.section-all-info {\n    width: 300px;\n    height: 367px;\n    background-color: #ffffff;\n    border-radius: 4px;\n}\n.section-all-info h3 {\n    float: right;\n}\n.align-icons {\n    display: flex;\n    align-items: flex-start;\n}\n.container-values-simulator {\n    background-color: #fafafa;\n}\naside {\n    padding: 10px;\n}\narticle {\n    padding: 30px;\n    width: 300px;\n    height: 484px;\n    margin-left: 0px;\n    margin-top: 24px;\n}\n.first-container-financing {\n    width: 272px;\n    height: 77px;\n}\n.second-container-financing{\n    width: 271px;\n    height: 77px;\n    display: flex;\n    flex-direction: column;\n}\n.first-container-financing h4 {\n    color: #7D28F7;\n    font-weight: bolder;\n}\n.second-container-financing h4 {\n    color: #7D28F7;\n    font-weight: bolder;\n}\n.first-container-financing h5 {\n    color: black;\n    font-weight: bolder;\n}\n.second-container-financing h5 {\n    color: black;\n    font-weight: bolder;\n}\n.second-container-financing div {\n    color: black;\n    font-weight: bolder;\n    width: 100px;\n}\n.container-btn-wpp{\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n    margin-top: 122px;\n}\n@media (min-width: 892px) {\n.second-container-financing div {\n    width: 147px;\n}\n.container-btn-wpp {\n    display: flex;\n    margin-top: 44px;\n    align-items: center;\n    flex-direction: row;\n}\n.first-container-financing {\n        width: 339px;\n        height: 77px;\n}\n.second-container-financing{\n    width: 259px;\n    height: 77px;\n    display: flex;\n    flex-direction: row;\n}\n.section-container {\n        display: flex;\n        margin: 35px 45px 75px 45px;\n        align-items: center;\n        flex-direction: row;\n}\narticle {\n        padding: 30px;\n        width: 945px;\n        height: 367px;\n        margin-left: 50px;\n        margin-top: 0px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

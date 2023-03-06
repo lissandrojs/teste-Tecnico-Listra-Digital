@@ -80,6 +80,7 @@ export default {
 
     mounted() {
         this.findAllVehicles();
+        this.findVehicleByModel('Fiat Uno');
     },
     methods: {
         findVehicleByModel(model) {
