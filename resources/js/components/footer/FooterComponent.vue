@@ -101,10 +101,16 @@ li{
     align-items: center;
 }
 
+.footer-item-first{
+    margin-left: 15px;  
+}
+
+
 .footer-item-first section{
     display: flex;
     justify-content: space-around;
 }
+
 
 .footer-item-last ul{
     display: flex;
@@ -120,7 +126,7 @@ li{
     margin: 1px
 }
 
-@media (min-width: 992px) {
+@media (min-width: 892px) {
     .footer-item {
         display: block;
     }

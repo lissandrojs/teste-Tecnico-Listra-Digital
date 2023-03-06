@@ -1,32 +1,27 @@
 <template>
     <section class="section-container">
-    <section>
+    <section class="section-all-info">
         <div>
-            <img :src="photograph" :alt="model">
+            <img class="imagem-vehicle" :src="photograph" :alt="model">
             <h5>{{ model }}</h5>
             <p>{{ description }}</p>
-            <section>
-                <div>
-                    <span>
-
-                    </span>
-                    <p>{{ year }}</p>
+            <section class="section-more-info-vehicle">
+                <div class="align-icons">
+                    <img src="../../../icons/ICON_ANO.png" alt="Ano do veiculo">
+                    <p>{{ year}}</p>
                 </div>
-                <div>
-                    <span>
-
-                    </span>
-                    <p>{{ milege }}</p>
+                <div class="align-icons">
+                    <img src="../../../icons/km.png">
+                    <p>{{ milege}}</p>
                 </div>
-                <div>
-                    <span>
-
-                    </span>
+                <div class="align-icons">
+                    <img src="../../../icons/cambio.png">
                     <p>
                         {{ typeofexchange }}
                     </p>
                 </div>
             </section>
+            <h3>R$ {{ vehiclevalue }}</h3>
         </div>
     </section>
 
@@ -38,9 +33,9 @@
             <div class="line-title"></div>
         </header>
         <section>
-            <div>
+            <h3>
                 {{ vehiclevalue }}
-            </div>
+            </h3>
 
             <div>
                 <div>
@@ -88,6 +83,7 @@ export default{
     width: 55px;
     height: 3px;
     border-radius: 22px;
+    margin-bottom: 25px;
 }
 
 .btn-wpp{
@@ -107,4 +103,25 @@ export default{
     margin: 35px 45px 75px 45px ;  
 }
 
+.imagem-vehicle{
+    width: 300px;
+    height: 191px;
+}
+.section-more-info-vehicle {
+    display: flex;
+    justify-content: space-between;
+}
+.section-all-info{
+    width: 300px;
+    height: 343px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+.section-all-info h3{
+    float: right;
+}
+.align-icons{
+    display: flex;
+    align-items: flex-start;
+}
 </style>
