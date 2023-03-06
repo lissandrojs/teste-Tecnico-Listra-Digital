@@ -5697,12 +5697,14 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("section", [_c("section", [_c("div", [_c("img", {
+  return _c("section", {
+    staticClass: "section-container"
+  }, [_c("section", [_c("div", [_c("img", {
     attrs: {
       src: _vm.photograph,
       alt: _vm.model
     }
-  }), _vm._v(" "), _c("h5", [_vm._v(_vm._s(_vm.model))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.description))]), _vm._v(" "), _c("section", [_c("div", [_c("span"), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.year))])]), _vm._v(" "), _c("div", [_c("span"), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.milege))])]), _vm._v(" "), _c("div", [_c("span"), _vm._v(" "), _c("p", [_vm._v("\n                        " + _vm._s(_vm.typeofexchange) + "\n                    ")])])])])]), _vm._v(" "), _c("article", [_vm._m(0), _vm._v(" "), _c("section", [_c("div", [_vm._v("\n                " + _vm._s(_vm.vehiclevalue) + "\n            ")]), _vm._v(" "), _c("div", [_c("div", [_vm._v("\n                    " + _vm._s(_vm.vehiclevalue) + "\n                ")]), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.vehiclevalue) + "\n                ")])]), _vm._v(" "), _c("div", [_c("button", [_vm._v("\n                    Falar com consultor\n                ")]), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.storephone) + "\n                ")])])])])]);
+  }), _vm._v(" "), _c("h5", [_vm._v(_vm._s(_vm.model))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.description))]), _vm._v(" "), _c("section", [_c("div", [_c("span"), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.year))])]), _vm._v(" "), _c("div", [_c("span"), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.milege))])]), _vm._v(" "), _c("div", [_c("span"), _vm._v(" "), _c("p", [_vm._v("\n                        " + _vm._s(_vm.typeofexchange) + "\n                    ")])])])])]), _vm._v(" "), _c("article", [_vm._m(0), _vm._v(" "), _c("section", [_c("div", [_vm._v("\n                " + _vm._s(_vm.vehiclevalue) + "\n            ")]), _vm._v(" "), _c("div", [_c("div", [_vm._v("\n                    " + _vm._s(_vm.vehiclevalue) + "\n                ")]), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.vehiclevalue) + "\n                ")])]), _vm._v(" "), _c("div", [_vm._m(1), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.storephone) + "\n                ")])])])])]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -5710,6 +5712,17 @@ var staticRenderFns = [function () {
   return _c("header", [_c("h2", [_vm._v("\n                Valores simulados para você\n            ")]), _vm._v(" "), _c("div", {
     staticClass: "line-title"
   })]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("button", {
+    staticClass: "btn-wpp"
+  }, [_c("img", {
+    attrs: {
+      alt: "icone whats app",
+      src: __webpack_require__(/*! ../../../icons/wpp.png */ "./resources/icons/wpp.png")
+    }
+  }), _vm._v(" Falar com consultor\n                ")]);
 }];
 render._withStripped = true;
 
@@ -11372,7 +11385,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.line-title{\n    background-color: #7D28F7;\n    width: 55px;\n    height: 3px;\n    border-radius: 22px;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.line-title{\n    background-color: #7D28F7;\n    width: 55px;\n    height: 3px;\n    border-radius: 22px;\n}\n.btn-wpp{\n    background-color: #4AC959;\n    height: 40px;\n    width: 257px;\n    border-radius: 4px;\n    border:none;\n    border-radius: 50px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    color: white;\n}\n.section-container {\n    margin: 35px 45px 75px 45px ;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

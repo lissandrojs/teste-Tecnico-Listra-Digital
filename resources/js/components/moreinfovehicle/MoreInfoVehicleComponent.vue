@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="section-container">
     <section>
         <div>
             <img :src="photograph" :alt="model">
@@ -52,8 +52,8 @@
             </div>
 
             <div>
-                <button>
-                    Falar com consultor
+                <button class="btn-wpp">
+                    <img alt="icone whats app" src="../../../icons/wpp.png"> Falar com consultor
                 </button>
                 <div>
                     {{ storephone }}
@@ -88,6 +88,23 @@ export default{
     width: 55px;
     height: 3px;
     border-radius: 22px;
+}
+
+.btn-wpp{
+    background-color: #4AC959;
+    height: 40px;
+    width: 257px;
+    border-radius: 4px;
+    border:none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.section-container {
+    margin: 35px 45px 75px 45px ;  
 }
 
 </style>
