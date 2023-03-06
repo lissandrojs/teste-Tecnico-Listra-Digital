@@ -11,7 +11,7 @@ Vue.component('search-vehicle-component', require('./components/SearchVehicleCom
 Vue.component('vehicle-create-component', require('./components/vehicle/VehicleCreateComponent.vue').default);
 Vue.component('header-component', require('./components/header/HeaderComponent.vue').default);
 Vue.component('footer-component', require('./components/footer/FooterComponent.vue').default);
-
+Vue.component('more-info-vehicle',require('./components/moreinfovehicle/MoreInfoVehicleComponent.vue').default);
 
 const app = new Vue({
     el:'#app'

@@ -28,6 +28,20 @@
             <p v-if="foundVehicle">{{ foundVehicle }}</p>
         </section>
        </main>
+       <MoreInfoVehicleComponent
+       :photograph="photograph"
+       :city="city"
+       :brand="brand"
+       :model="model"
+       :description="description"
+       :year="year"
+       :milege="milege"
+       :typeofexchange="typeofexchange"
+       :storephone="storephone"
+       :vehiclevalue="vehiclevalue"
+       >
+
+       </MoreInfoVehicleComponent>
        <FooterComponent/>
     </main>
 </template>
@@ -36,6 +50,7 @@
 import axios from "axios";
 import HeaderComponent from "./header/HeaderComponent.vue";
 import FooterComponent from "./footer/FooterComponent.vue";
+import MoreInfoVehicleComponent from "./moreinfovehicle/MoreInfoVehicleComponent.vue";
 
 export default {
     
@@ -44,11 +59,23 @@ export default {
             foundVehicle: null,
             options: [],
             selectedOption: null,
+
+            photograph:'',
+            city: "",
+            brand: "",
+            model:"",
+            description:"",
+            year: "",
+            milege:"",
+            typeofexchange:"",
+            storephone:"",
+            vehiclevalue:"",
         };
     },
     components:{
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        MoreInfoVehicleComponent,
     },
 
     mounted() {
@@ -58,7 +85,19 @@ export default {
         findVehicleByModel(model) {
             axios
                 .get(`/vehicle-model/${model}`)
-                .then((res) => (this.foundVehicle = res.data))
+                .then((res) => {(
+                    this.photograph = res.data.photograph,
+                    this.city = res.data.city,
+                    this.brand = res.data.brand,
+                    this.model = res.data.model,
+                    this.description = res.data.description,
+                    this.year = res.data.year,
+                    this.milege = res.data.milege,
+                    this.typeofexchange = res.data.typeofexchange,
+                    this.storephone = res.data.storephone,
+                    this.vehiclevalue = res.data.vehiclevalue
+                    
+                    )})
                 .catch((error) => {
                     console.log(error);
                 });
@@ -103,12 +142,15 @@ body{
     margin: 35px 0;
     padding-left: 25px;
 }
+
+
 .select-options{
     background-color: #E5E5E5;
     border-radius: 4px;
     width: 300px;
     height: 50px;
     margin-right: 15px;
+    margin-top: 10px;
 }
 .btn-simulator{
     background-color: #7D28F7;
@@ -117,5 +159,8 @@ body{
     border: none;
     color: white;
     border-radius: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 10px;
 }
 </style>
