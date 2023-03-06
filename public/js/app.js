@@ -5592,82 +5592,56 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
-  return _c("footer", {
-    staticClass: "footer-container"
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("div", {
-    staticClass: "footer-item-last"
-  }, [_c("h3", [_vm._v("Siga a gente")]), _vm._v(" "), _c("ul", [_c("li", [_c("font-awesome-icon", {
-    attrs: {
-      icon: ["fab", "whatsapp"]
-    }
-  })], 1), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)])])]);
+  return _vm._m(0);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
-  return _c("ul", {
+  return _c("footer", {
+    staticClass: "footer-container"
+  }, [_c("ul", {
     staticClass: "footer-item"
-  }, [_c("h3", [_vm._v("Encontre seu veículo")]), _vm._v(" "), _c("li", [_vm._v("Encontre seu veiculo")]), _vm._v(" "), _c("li", [_vm._v("Lojas")]), _vm._v(" "), _c("li", [_vm._v("Promoções")]), _vm._v(" "), _c("li", [_vm._v("Vantagens")]), _vm._v(" "), _c("li", [_vm._v("Garantia Mais")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c("ul", {
+  }, [_c("h3", [_vm._v("Encontre seu veículo")]), _vm._v(" "), _c("li", [_vm._v("Encontre seu veiculo")]), _vm._v(" "), _c("li", [_vm._v("Lojas")]), _vm._v(" "), _c("li", [_vm._v("Promoções")]), _vm._v(" "), _c("li", [_vm._v("Vantagens")]), _vm._v(" "), _c("li", [_vm._v("Garantia Mais")])]), _vm._v(" "), _c("ul", {
     staticClass: "footer-item"
-  }, [_c("h3", [_vm._v("A Empresa")]), _vm._v(" "), _c("li", [_vm._v("Sobre")]), _vm._v(" "), _c("li", [_vm._v("Delivery")]), _vm._v(" "), _c("li", [_vm._v("Aviso de Privacidade")]), _vm._v(" "), _c("li", [_vm._v("Blog Seminovos")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c("ul", {
+  }, [_c("h3", [_vm._v("A Empresa")]), _vm._v(" "), _c("li", [_vm._v("Sobre")]), _vm._v(" "), _c("li", [_vm._v("Delivery")]), _vm._v(" "), _c("li", [_vm._v("Aviso de Privacidade")]), _vm._v(" "), _c("li", [_vm._v("Blog Seminovos")])]), _vm._v(" "), _c("ul", {
     staticClass: "footer-item"
-  }, [_c("h3", [_vm._v("Atendimento")]), _vm._v(" "), _c("li", [_vm._v("Perguntas Frequentes")]), _vm._v(" "), _c("li", [_vm._v("Fale Conosco")]), _vm._v(" "), _c("li", [_vm._v("Pós-vendas")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c("ul", {
+  }, [_c("h3", [_vm._v("Atendimento")]), _vm._v(" "), _c("li", [_vm._v("Perguntas Frequentes")]), _vm._v(" "), _c("li", [_vm._v("Fale Conosco")]), _vm._v(" "), _c("li", [_vm._v("Pós-vendas")])]), _vm._v(" "), _c("ul", {
     staticClass: "footer-item"
-  }, [_c("h3", [_vm._v("Lojistas")]), _vm._v(" "), _c("li", [_vm._v("Acesse Seminovos Atacado")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c("div", {
+  }, [_c("h3", [_vm._v("Lojistas")]), _vm._v(" "), _c("li", [_vm._v("Acesse Seminovos Atacado")])]), _vm._v(" "), _c("div", {
     staticClass: "footer-item-first"
   }, [_c("h3", [_vm._v("Atendimento ao cliente")]), _vm._v(" "), _c("section", [_c("div", {
     staticClass: "block-0800"
   }, [_c("p", [_vm._v("0800 000 000")])]), _vm._v(" "), _c("div", {
     staticClass: "block-wpp"
-  })])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c("li", [_c("a", {
+  }, [_c("img", {
     attrs: {
-      href: "#"
+      alt: "icone whats app",
+      src: __webpack_require__(/*! ../../../icons/wpp.png */ "./resources/icons/wpp.png")
     }
-  })]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c("li", [_c("a", {
+  })])])]), _vm._v(" "), _c("div", {
+    staticClass: "footer-item-last"
+  }, [_c("h3", [_vm._v("Siga a gente")]), _vm._v(" "), _c("ul", [_c("li", [_c("img", {
     attrs: {
-      href: "#"
+      alt: "icone facebook",
+      src: __webpack_require__(/*! ../../../icons/Facebook.png */ "./resources/icons/Facebook.png")
     }
-  })]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c("li", [_c("a", {
+  })]), _vm._v(" "), _c("li", [_c("img", {
     attrs: {
-      href: "#"
+      alt: "icone instagram",
+      src: __webpack_require__(/*! ../../../icons/Instagram.png */ "./resources/icons/Instagram.png")
     }
-  })]);
+  })]), _vm._v(" "), _c("li", [_c("img", {
+    attrs: {
+      alt: "icone facebook",
+      src: __webpack_require__(/*! ../../../icons/Twitter.png */ "./resources/icons/Twitter.png")
+    }
+  })]), _vm._v(" "), _c("li", [_c("img", {
+    attrs: {
+      alt: "icone facebook",
+      src: __webpack_require__(/*! ../../../icons/LinkedIN.png */ "./resources/icons/LinkedIN.png")
+    }
+  })])])])]);
 }];
 render._withStripped = true;
 
@@ -11350,7 +11324,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.footer-container {\n    padding: 25px;\n    color: #ffffff;\n    width: 100%;\n    background-color: #343a40;\n    display: flex;\n    justify-content: space-around;\n}\n.footer-item {\n    display: none;\n}\nli{\n    list-style: none;\n}\n.block-0800{\n    background-color: #7D28F7;\n    height: 42px;\n    width: 128px;\n    display: flex;\n    align-items: center;\n    font-weight: bolder;\n    justify-content: space-around;\n    font-size: 16px;\n    border-radius: 4px;\n}\n.block-0800 p{\n    margin-top:16px\n}\n.block-wpp{\n    background-color: #4AC959;\n    height: 42px;\n    width: 40px;\n    border-radius: 4px;\n}\n.footer-item-first section{\n    display: flex;\n    justify-content: space-around;\n}\n.footer-item-last ul{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\n.footer-item-last li{\n    width: 25px;\n    height: 27px;\n    border-radius: 4px;\n    background-color: #7D28F7;\n    margin: 1px\n}\n@media (min-width: 992px) {\n.footer-item {\n        display: block;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.footer-container {\n    padding: 25px;\n    color: #ffffff;\n    width: 100%;\n    background-color: #343a40;\n    display: flex;\n    justify-content: space-around;\n}\n.footer-item {\n    display: none;\n}\nli{\n    list-style: none;\n}\n.block-0800{\n    background-color: #7D28F7;\n    height: 42px;\n    width: 128px;\n    display: flex;\n    align-items: center;\n    font-weight: bolder;\n    justify-content: space-around;\n    font-size: 16px;\n    border-radius: 4px;\n}\n.block-0800 p{\n    margin-top:16px\n}\n.block-wpp{\n    background-color: #4AC959;\n    height: 42px;\n    width: 40px;\n    border-radius: 4px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.footer-item-first section{\n    display: flex;\n    justify-content: space-around;\n}\n.footer-item-last ul{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\n.footer-item-last li{\n    width: 25px;\n    height: 27px;\n    border-radius: 4px;\n    background-color: #7D28F7;\n    margin: 1px\n}\n@media (min-width: 992px) {\n.footer-item {\n        display: block;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11488,6 +11462,56 @@ module.exports = function (cssWithMappingToString) {
 /***/ ((module) => {
 
 module.exports = "/images/LISTRA_DIGITAL.png?385f319ed1b8f0628fecaec3fdf3107d";
+
+/***/ }),
+
+/***/ "./resources/icons/Facebook.png":
+/*!**************************************!*\
+  !*** ./resources/icons/Facebook.png ***!
+  \**************************************/
+/***/ ((module) => {
+
+module.exports = "/images/Facebook.png?becc31efd1e3edecd26b79c219687eb7";
+
+/***/ }),
+
+/***/ "./resources/icons/Instagram.png":
+/*!***************************************!*\
+  !*** ./resources/icons/Instagram.png ***!
+  \***************************************/
+/***/ ((module) => {
+
+module.exports = "/images/Instagram.png?49d56627b47d33d8ddb477d05bf9fd7f";
+
+/***/ }),
+
+/***/ "./resources/icons/LinkedIN.png":
+/*!**************************************!*\
+  !*** ./resources/icons/LinkedIN.png ***!
+  \**************************************/
+/***/ ((module) => {
+
+module.exports = "/images/LinkedIN.png?bb74eebc35d519bc5e6ebbed56fa9808";
+
+/***/ }),
+
+/***/ "./resources/icons/Twitter.png":
+/*!*************************************!*\
+  !*** ./resources/icons/Twitter.png ***!
+  \*************************************/
+/***/ ((module) => {
+
+module.exports = "/images/Twitter.png?1434a11fbe793e74b093cf698e3d8a63";
+
+/***/ }),
+
+/***/ "./resources/icons/wpp.png":
+/*!*********************************!*\
+  !*** ./resources/icons/wpp.png ***!
+  \*********************************/
+/***/ ((module) => {
+
+module.exports = "/images/wpp.png?f38cfec558b5e845e31726385f5ef755";
 
 /***/ }),
 

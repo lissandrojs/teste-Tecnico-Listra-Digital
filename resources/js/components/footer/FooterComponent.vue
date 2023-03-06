@@ -32,7 +32,7 @@
                     <p>0800 000 000</p>
                 </div>
                 <div class="block-wpp">
-                  
+                  <img alt="icone whats app" src="../../../icons/wpp.png">
                 </div>
            </section>
         </div>
@@ -40,16 +40,16 @@
             <h3>Siga a gente</h3>
             <ul >
             <li>
-                <font-awesome-icon :icon="['fab', 'whatsapp']" />
+                <img alt="icone facebook" src="../../../icons/Facebook.png">
             </li>
             <li>
-                <a href="#"></a>
+                <img alt="icone instagram" src="../../../icons/Instagram.png">
             </li>
             <li>
-                <a href="#"> </a>
+                <img alt="icone facebook" src="../../../icons/Twitter.png">
             </li>
             <li>
-                <a href="#"> </a>
+                <img alt="icone facebook" src="../../../icons/LinkedIN.png">
             </li>
         </ul>
         </div>
@@ -57,6 +57,8 @@
 </template>
 
 <script>
+    
+
 </script>
     
 <style>
@@ -94,6 +96,9 @@ li{
     height: 42px;
     width: 40px;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-item-first section{
