@@ -5709,13 +5709,20 @@ var render = function render() {
     staticClass: "section-container"
   }, [_c("section", {
     staticClass: "section-all-info"
-  }, [_c("div", [_c("img", {
+  }, [_c("img", {
     staticClass: "imagem-vehicle",
     attrs: {
       src: _vm.photograph,
       alt: _vm.model
     }
-  }), _vm._v(" "), _c("h5", [_vm._v(_vm._s(_vm.model))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.description))]), _vm._v(" "), _c("section", {
+  }), _vm._v(" "), _c("div", {
+    staticClass: "container-location"
+  }, [_c("img", {
+    attrs: {
+      src: __webpack_require__(/*! ../../../icons/ICON_LOCALIZACAO.png */ "./resources/icons/ICON_LOCALIZACAO.png"),
+      alt: "icone de localização"
+    }
+  }), _vm._v("\n            " + _vm._s(_vm.city) + "\n        ")]), _vm._v(" "), _c("aside", [_c("h5", [_vm._v(_vm._s(_vm.model))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.description))]), _vm._v(" "), _c("section", {
     staticClass: "section-more-info-vehicle"
   }, [_c("div", {
     staticClass: "align-icons"
@@ -5736,12 +5743,14 @@ var render = function render() {
     attrs: {
       src: __webpack_require__(/*! ../../../icons/cambio.png */ "./resources/icons/cambio.png")
     }
-  }), _vm._v(" "), _c("p", [_vm._v("\n                        " + _vm._s(_vm.typeofexchange) + "\n                    ")])])]), _vm._v(" "), _c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])])]), _vm._v(" "), _c("article", [_vm._m(0), _vm._v(" "), _c("section", [_c("h3", [_vm._v("\n                " + _vm._s(_vm.vehiclevalue) + "\n            ")]), _vm._v(" "), _c("div", [_c("div", [_vm._v("\n                    " + _vm._s(_vm.vehiclevalue) + "\n                ")]), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.vehiclevalue) + "\n                ")])]), _vm._v(" "), _c("div", [_vm._m(1), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.storephone) + "\n                ")])])])])]);
+  }), _vm._v(" "), _c("p", [_vm._v("\n                    " + _vm._s(_vm.typeofexchange) + "\n                ")])])]), _vm._v(" "), _c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])])]), _vm._v(" "), _c("article", {
+    staticClass: "container-values-simulator"
+  }, [_vm._m(0), _vm._v(" "), _c("section", [_c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))]), _vm._v(" "), _c("div", [_c("div", [_c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])]), _vm._v(" "), _c("div", [_c("h3", [_vm._v("R$ " + _vm._s(_vm.vehiclevalue))])])]), _vm._v(" "), _c("div", [_vm._m(1), _vm._v(" "), _c("div", [_vm._v("\n                    " + _vm._s(_vm.storephone) + "\n                ")])])])])]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("header", [_c("h2", [_vm._v("\n                Valores simulados para você\n            ")]), _vm._v(" "), _c("div", {
+  return _c("header", [_c("h2", [_vm._v("Valores simulados para você")]), _vm._v(" "), _c("div", {
     staticClass: "line-title"
   })]);
 }, function () {
@@ -5754,7 +5763,7 @@ var staticRenderFns = [function () {
       alt: "icone whats app",
       src: __webpack_require__(/*! ../../../icons/wpp.png */ "./resources/icons/wpp.png")
     }
-  }), _vm._v(" Falar com consultor\n                ")]);
+  }), _vm._v("\n                    Falar com consultor\n                ")]);
 }];
 render._withStripped = true;
 
@@ -11439,7 +11448,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.line-title{\n    background-color: #7D28F7;\n    width: 55px;\n    height: 3px;\n    border-radius: 22px;\n    margin-bottom: 25px;\n}\n.btn-wpp{\n    background-color: #4AC959;\n    height: 40px;\n    width: 257px;\n    border-radius: 4px;\n    border:none;\n    border-radius: 50px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    color: white;\n}\n.section-container {\n    margin: 35px 45px 75px 45px ;\n}\n.imagem-vehicle{\n    width: 300px;\n    height: 191px;\n}\n.section-more-info-vehicle {\n    display: flex;\n    justify-content: space-between;\n}\n.section-all-info{\n    width: 300px;\n    height: 343px;\n    background-color: #FFFFFF;\n    border-radius: 4px;\n}\n.section-all-info h3{\n    float: right;\n}\n.align-icons{\n    display: flex;\n    align-items: flex-start;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.line-title {\n    background-color: #7d28f7;\n    width: 55px;\n    height: 3px;\n    border-radius: 22px;\n    margin-bottom: 25px;\n}\n.container-location {\n    border-radius: 0px 16px 16px 0px;\n    position: relative;\n    bottom: 39px;\n    width:60%;\n    background-color: #ffffff;\n    padding-left: 5px;\n    padding-right: 10px;\n}\n.btn-wpp {\n    background-color: #4ac959;\n    height: 40px;\n    width: 257px;\n    border-radius: 4px;\n    border: none;\n    border-radius: 50px;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    color: white;\n}\n.section-container {\n    display: flex;\n    margin: 35px 45px 75px 45px;\n    align-items: center;\n    flex-direction: column;\n}\n.imagem-vehicle {\n    width: 300px;\n    height: 191px;\n}\n.section-more-info-vehicle {\n    display: flex;\n    justify-content: space-between;\n}\n.section-all-info {\n    width: 300px;\n    height: 367px;\n    background-color: #ffffff;\n    border-radius: 4px;\n}\n.section-all-info h3 {\n    float: right;\n}\n.align-icons {\n    display: flex;\n    align-items: flex-start;\n}\n.container-values-simulator {\n    background-color: #fafafa;\n}\naside{\n    padding: 10px;\n}\narticle{\n    width: 300px;\n    height: 416px;\n    margin-left: 0px;\n    margin-top: 24px;\n}\n@media (min-width: 892px) {\n.section-container {\n        display: flex;\n        margin: 35px 45px 75px 45px;\n        align-items: center;\n        flex-direction: row;\n}\narticle{\n    width: 945px;\n    height: 367px;\n    margin-left: 50px;\n    margin-top: 0px;\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11573,6 +11582,16 @@ module.exports = "/images/Facebook.png?becc31efd1e3edecd26b79c219687eb7";
 /***/ ((module) => {
 
 module.exports = "/images/ICON_ANO.png?abfb241e235c1ed3b8693f7e799626f4";
+
+/***/ }),
+
+/***/ "./resources/icons/ICON_LOCALIZACAO.png":
+/*!**********************************************!*\
+  !*** ./resources/icons/ICON_LOCALIZACAO.png ***!
+  \**********************************************/
+/***/ ((module) => {
+
+module.exports = "/images/ICON_LOCALIZACAO.png?f44e9ab1567745936681ef2822138f2f";
 
 /***/ }),
 
