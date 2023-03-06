@@ -78,8 +78,11 @@ export default {
 </script>
 
 <style>
-.main-container{
+body{
     background-color:#F5F5F5;
+}
+.main-container{
+    margin-top: 55px;
     margin-left: 45px;
     margin-right: 45px;
 }
@@ -97,6 +100,8 @@ export default {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    margin: 35px 0;
+    padding-left: 25px;
 }
 .select-options{
     background-color: #E5E5E5;
