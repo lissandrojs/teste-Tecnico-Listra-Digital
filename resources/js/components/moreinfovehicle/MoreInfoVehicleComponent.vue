@@ -43,17 +43,17 @@
             <section>
                 <section class="first-container-financing">
                     <h5> 6X</h5>
-                    <h4>R$ {{ vehiclevalue }}</h4>
+                    <h4>R$ {{ calcValue(6, 12.47,vehiclevalue).toFixed(3) }}</h4>
                 </section>
 
                 <section class="second-container-financing">
                     <div>
                         <h5>12X</h5>
-                        <h4>R$ {{ vehiclevalue }}</h4>
+                        <h4>R$ {{ calcValue(12, 15.56,vehiclevalue).toFixed(3)  }}</h4>
                     </div>
                     <div>
                         <h5>48X</h5>
-                        <h4>R$ {{ vehiclevalue }}</h4>
+                        <h4>R$ {{ calcValue(48, 18.69,vehiclevalue).toFixed(3) }}</h4>
                     </div>
                 </section>
 
@@ -76,6 +76,14 @@
 
 <script>
 export default {
+    data(){
+        return {
+            amount:0,
+            addPercetage:0,
+        }
+
+    },
+
     props: {
         photograph: String,
         city: String,
@@ -88,6 +96,14 @@ export default {
         storephone: String,
         vehiclevalue: String,
     },
+    methods:{
+        calcValue(times ,percentage , value){
+            
+            this.amount = parseFloat(value) *(1+(percentage / 100));
+
+          return this.amount /times  || 0;
+        }
+    }
 };
 </script>
 
@@ -171,6 +187,15 @@ article {
 .first-container-financing {
     width: 272px;
     height: 77px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+.second-container-financing div {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 7px;
 }
 
 .second-container-financing{
@@ -178,9 +203,8 @@ article {
     height: 77px;
     display: flex;
     flex-direction: column;
-
+   
 }
-
 .first-container-financing h4 {
     color: #7D28F7;
     font-weight: bolder;
@@ -224,6 +248,7 @@ h6{
 
     .second-container-financing div {
     width: 147px;
+    margin-right: 10px;
 }
 
     .container-btn-wpp {
@@ -238,7 +263,7 @@ h6{
     }
 
     .second-container-financing{
-    width: 259px;
+    width: 356px;
     height: 77px;
     display: flex;
     flex-direction: row;
