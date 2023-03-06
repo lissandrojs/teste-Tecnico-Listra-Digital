@@ -65,9 +65,9 @@
                         />
                         Falar com consultor
                     </button>
-                    <div>
+                    <h6>
                         {{ storephone }}
-                    </div>
+                    </h6>
                 </div>
             </section>
         </article>
@@ -121,6 +121,7 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     color: white;
+    margin-right: 15px;
 }
 
 .section-container {
@@ -215,6 +216,9 @@ article {
     
 }
 
+h6{
+    font-weight: bolder;
+}
 
 @media (min-width: 892px) {
 
