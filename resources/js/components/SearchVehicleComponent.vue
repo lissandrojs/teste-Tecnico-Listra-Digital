@@ -136,7 +136,7 @@ body{
 .section-selected{
     display: flex;
     background-color: #FAFAFA;
-    height: 158px;
+    height: 288px;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -148,11 +148,12 @@ body{
 .select-options{
     background-color: #E5E5E5;
     border-radius: 4px;
-    width: 300px;
+    width: 218px;
     height: 50px;
     margin-right: 15px;
     margin-top: 10px;
 }
+
 .btn-simulator{
     background-color: #7D28F7;
     width: 187px;
@@ -163,5 +164,14 @@ body{
     font-size: 18px;
     font-weight: bolder;
     margin-top: 10px;
+}
+@media (min-width: 892px) {
+    .select-options{
+    width: 300px;
+}
+
+.section-selected{
+    height: 158px;
+}
 }
 </style>

@@ -138,6 +138,7 @@ export default {
     align-items: center;
     color: white;
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .section-container {
@@ -185,7 +186,7 @@ article {
     margin-top: 24px;
 }
 .first-container-financing {
-    width: 272px;
+    width: 256px;
     height: 77px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -196,6 +197,7 @@ article {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     padding: 7px;
+    width: 256px;
 }
 
 .second-container-financing{
@@ -229,15 +231,15 @@ article {
 .second-container-financing div {
     color: black;
     font-weight: bolder;
-    width: 100px;
+    width: 256px;
 }
 
 .container-btn-wpp{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 122px;;
-    
+    margin-top: 122px;
+    margin-left: 20px;
 }
 
 h6{
